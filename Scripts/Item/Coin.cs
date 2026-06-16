@@ -15,9 +15,6 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // FMOD
-            RuntimeManager.PlayOneShot("event:/getCoin", transform.position);
-
             // PlayerDataManager 체크
             if (PlayerDataManager.Instance != null)
             {
